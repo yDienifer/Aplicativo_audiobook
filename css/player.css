@@ -1,0 +1,88 @@
+.player-wrapper {
+    margin-top: 5.5rem;
+}
+
+.player-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-content .player-content__audiobook-cover {
+    background: lightgray url('/assets/img/dom-casmurro.jpeg') 100% 100% no-repeat;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    height: 300px;
+    width: 300px;
+}
+
+.player-controls {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    width: 100%;
+}
+
+.player-controls .player-controls__control-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(2.4rem, 4vw, 2.6rem);
+}
+
+.player-controls .player-controls__play-pause-button {
+    color: #F26B6C;
+}
+
+.player-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.player-header #player-header__chapter {
+    color: #F26B6C;
+    font-size: clamp(2.1rem, 4vw, 2.4rem);
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 1.5rem;
+}
+
+.player-header #player-header__author {
+    color: #787878;
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+.player-progress-bar {
+    background: rgba(120, 120, 120, 0.32);
+    height: 2px;
+    margin-top: 5.5rem;
+    position: relative;
+    width: 100%;
+}
+
+.player-progress-bar .player-progress-bar__progress-bar {
+    background: #F26B6C;
+    height: 2px;
+    position: absolute;
+    width: 0;
+}
+
+@media (max-width: 768px) {
+    .player-content .player-content__audiobook-cover {
+        background-size: 100%;
+        height: 220px;
+        width: 220px;
+    }
+}

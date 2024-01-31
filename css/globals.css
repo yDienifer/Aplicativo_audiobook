@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  src:
+    url('assets/font/uni_neue/WEB/UniNeue-Trial-Black.eot'),
+    url('assets/font/uni_neue/WEB/UniNeue-Trial-Black.woff') format('woff'),
+    url('assets/font/uni_neue/WEB/UniNeue-Trial-Black.woff2') format('woff2');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Uni Neue", sans-serif;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
