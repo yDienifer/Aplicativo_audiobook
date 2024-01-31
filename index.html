@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Aplicativo Audiobook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <main>
+        <nav class="nav-wrapper">
+            <div class="nav-content">
+                <button class="nav-content__icon-button"><a href="#" class="nav-content__icon-link"><i
+                            class="bi bi-arrow-left"></i></a></button>
+                <div class="nav-title">
+                    <div class="nav-title__overlay-circular"></div>
+                    <span id="nav-title__text">Now Playing</span>
+                </div>
+                <button class="nav-content__icon-button"><a href="#" class="nav-content__icon-link"><i
+                            class="bi bi-three-dots-vertical"></i></a></button>
+            </div>
+        </nav>
+        <article class="player-wrapper">
+            <div class="player-content">
+                <div class="player-content__audiobook-cover"></div>
+                <div class="player-header">
+                    <h1 id="player-header__chapter">Capítulo 1</h1>
+                    <span id="player-header__author">Machado de Assis</span>
+                </div>
+                <div class="player-audio">
+                    <audio id="player-audio__audio-chapter" src="./assets/audio/dom-casmurro/1.mp3"
+                        type="audio/mp3"></audio>
+                </div>
+                <div class="player-progress-bar">
+                    <div class="player-progress-bar__progress-bar" id="progress"></div>
+                </div>
+                <div class="player-controls">
+                    <button id="backward-button"
+                        class="player-controls__control-button player-controls__backward-button">
+                        <i class="bi bi-skip-backward-fill"></i>
+                    </button>
+                    <button id="play-pause-button"
+                        class="player-controls__control-button player-controls__play-pause-button">
+                        <i id="player-controls__icon-play-pause" class="bi bi-play-circle-fill"></i>
+                    </button>
+                    <button id="forward-button" class="player-controls__control-button player-controls__forward-button">
+                        <i class="bi bi-skip-forward-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
